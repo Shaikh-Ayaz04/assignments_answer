@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: var(--primary-color);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -11,3 +12,87 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root{
+  --primary-color: #3B060A;
+  --secondary-color: #8A0000;
+  --tertiary-color: #C83F12;
+  --wcolor:#FFF287;
+}
+
+.nav{
+  background-color: var(--wcolor);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  height: 90px;
+}
+.nav img{
+  height: 100px;
+  width: 120px;
+}
+
+.nav ul{
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  
+  
+}
+.nav ul li{
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  
+  
+}
+.nav ul li a{
+  text-decoration: none;
+  color: var(--secondary-color);
+  
+}
+.nav ul li a:hover{
+  color: var(--tertiary-color);
+}
+
+.product-card{
+  height: auto;
+  width: 200px;
+  background-color: var(--wcolor);
+  border: 2px solid white;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: outset 0 0 10px #000000;
+
+}
+.product-card img{
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.product-card button{
+  background-color: #8A0000;
+  color: #FFF287;
+  border: none;
+  margin: 5px;
+  padding: 5px 10px;
+  font-size: medium;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.product-card button:hover{
+  color: #3B060A;
+  background-color: #FFF287;
+  font-size: calc(16px + 4px);
+  font-weight: bolder;
+  text-shadow: #000000;
+}
+
+.product-box{
+  display: flex;
+}
+
